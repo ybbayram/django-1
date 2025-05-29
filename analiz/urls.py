@@ -17,6 +17,5 @@ urlpatterns = [
     path('top-brands/', TopSearchedBrandsAPIView.as_view(), name='top-brands'),
 ]
 
-# Sadece geliştirme ortamında medya dosyalarını servis et
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

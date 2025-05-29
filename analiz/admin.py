@@ -6,9 +6,9 @@ from .models import (
 from django.utils.translation import gettext_lazy as _
 
 # 📌 Yönetici paneli başlıklarını güncelle
-admin.site.site_header = _("Brandly Yönetici Paneli")
-admin.site.site_title = _("Brandly Admin")
-admin.site.index_title = _("Brandly Yönetim Paneline Hoş Geldiniz")
+admin.site.site_header = _("Proje Yönetici Paneli")
+admin.site.site_title = _("Proje Admin")
+admin.site.index_title = _("Proje Yönetim Paneline Hoş Geldiniz")
 
 
 @admin.register(Search)

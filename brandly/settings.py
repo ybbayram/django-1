@@ -15,7 +15,7 @@ SECRET_KEY = os.getenv("DJANGO_SECRET_KEY", "unsafe-default")
 DEBUG = os.getenv("DEBUG", "False") == "True"
 
 ALLOWED_HOSTS = [
-    "yonet.brandlyai.com",
+    "yonet.siteadi.com",
     "localhost",
     "127.0.0.1",
     "45.84.191.180",
@@ -61,8 +61,8 @@ MIDDLEWARE = [
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
     "http://127.0.0.1:3000",
-    "https://brandlyai.com",
-    "https://www.brandlyai.com"
+    "https://siteadi.com",
+    "https://www.siteadi.com"
 ]
 
 CORS_ALLOW_CREDENTIALS = True
@@ -126,7 +126,7 @@ AUTH_USER_MODEL = 'kullanici.CustomUser'
 
 # CSRF için güvenilir originler
 CSRF_TRUSTED_ORIGINS = [
-    "https://yonet.brandlyai.com",
-    "https://brandlyai.com",
-    "https://www.brandlyai.com"
+    "https://yonet.siteadi.com",
+    "https://siteadi.com",
+    "https://www.siteadi.com"
 ]
